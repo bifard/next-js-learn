@@ -1,10 +1,6 @@
-import Head from "next/head";
-import { Htag } from "@/components";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import { Button, Htag } from "@/components";
 
-const inter = Inter({ subsets: ["latin"] });
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -17,6 +13,12 @@ export default function Home() {
       </Head>
       <div>
         <Htag tag="h2">Text</Htag>
+        <div style={{ marginBottom: "10px", display: "flex", justifyContent: "center" }}>
+          <Button>Button-1</Button>
+        </div>
+        <div style={{ marginBottom: "10px", display: "flex", justifyContent: "center" }}>
+          <Button appearance="ghost">Button-2</Button>
+        </div>
       </div>
     </>
   );
