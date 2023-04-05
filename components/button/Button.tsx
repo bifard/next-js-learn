@@ -1,7 +1,15 @@
+import ArrowIcon from "./arrow.svg";
 import { ButtonProps } from "./Button.props";
 import cn from "classnames";
 import styles from "./Button.module.css";
-export const Button = ({ children, appearance = "primary", className, ...props }: ButtonProps): JSX.Element => {
+ArrowIcon as React.FunctionComponent<React.SVGAttributes<SVGAElement>>;
+export const Button = ({
+  children,
+  arrow = "none",
+  appearance = "primary",
+  className,
+  ...props
+}: ButtonProps): JSX.Element => {
   return (
     <button
       className={cn(styles.button, className, {
@@ -11,6 +19,11 @@ export const Button = ({ children, appearance = "primary", className, ...props }
       {...props}
     >
       {children}
+      {arrow !== "none" && (
+        <span className={cn(styles.arrow, { [styles.down]: arrow === "down" })}>
+          <ArrowIcon />
+        </span>
+      )}
     </button>
   );
 };

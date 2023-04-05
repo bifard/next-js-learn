@@ -17,7 +17,7 @@ export default function Home() {
           <Button>Button-1</Button>
         </div>
         <div style={{ marginBottom: "10px", display: "flex", justifyContent: "center" }}>
-          <Button appearance="ghost" className="asd">
+          <Button appearance="ghost" arrow="right">
             Button-2
           </Button>
         </div>
