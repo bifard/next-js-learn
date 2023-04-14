@@ -1,4 +1,4 @@
-import { Button, Htag, Paragraph } from "@/components";
+import { Button, Htag, Paragraph, Tag } from "@/components";
 
 import Head from "next/head";
 
@@ -27,6 +27,38 @@ export default function Home() {
             dignissimos facilis nemo! Asperiores, dolore debitis magni iure ad iusto minima eaque blanditiis sint
             commodi.
           </Paragraph>
+        </div>
+        <div style={{ marginBottom: "10px", display: "flex", justifyContent: "center" }}>
+          <Tag size="small" color="ghost">
+            small
+          </Tag>
+          <Tag size="normal" color="ghost">
+            normal
+          </Tag>
+          <Tag size="small" color="red">
+            small
+          </Tag>
+          <Tag size="normal" color="red">
+            normal
+          </Tag>
+          <Tag size="small" color="green">
+            small
+          </Tag>
+          <Tag size="normal" color="green">
+            normal
+          </Tag>
+          <Tag size="small" color="grey">
+            small
+          </Tag>
+          <Tag size="normal" color="grey">
+            normal
+          </Tag>
+          <Tag size="small" color="primary">
+            small
+          </Tag>
+          <Tag size="normal" color="primary">
+            normal
+          </Tag>
         </div>
       </div>
     </>
