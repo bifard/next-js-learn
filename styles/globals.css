@@ -26,4 +26,9 @@ body {
   --green: #007b48;
   --green-light: #c8f8e4;
   --font-family: "Noto Sans KR", sans-serif;
+  --font-size-p-small: 14px;
+  --font-size-p-normal: 16px;
+  --font-size-p-large: 18px;
+  --line-height-normal:24px;
+  --line-height-large:29px;
 }

@@ -1,4 +1,4 @@
-import { Button, Htag } from "@/components";
+import { Button, Htag, Paragraph } from "@/components";
 
 import Head from "next/head";
 
@@ -17,9 +17,16 @@ export default function Home() {
           <Button>Button-1</Button>
         </div>
         <div style={{ marginBottom: "10px", display: "flex", justifyContent: "center" }}>
-          <Button appearance="ghost" arrow="right">
+          <Button appearance="ghost" arrow="down">
             Button-2
           </Button>
+        </div>
+        <div style={{ marginBottom: "10px", display: "flex", justifyContent: "center" }}>
+          <Paragraph>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sed officiis maiores sapiente nulla ab
+            dignissimos facilis nemo! Asperiores, dolore debitis magni iure ad iusto minima eaque blanditiis sint
+            commodi.
+          </Paragraph>
         </div>
       </div>
     </>
